@@ -1,8 +1,13 @@
 SOFTWARE REQUIREMENTS : 
 
  LANGUAGE USED	        : PYTHON
+
  DATABASE			        : My SQL 
+
  SERVER				        : PYTHON-FLASK 
+
  USER INTERFACE DESIGN	: HTML, CSS3, JQUERY, JAVASCRIPT
+
  TEXT EDITORS			    : NOTEPAD++, PYCHARM
+
  BROWSER			          : Chrome (90% zooming) 
