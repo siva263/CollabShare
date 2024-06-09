@@ -1,0 +1,5 @@
+  mysql_host : 'localhost'
+  mysql_user : 'mysqlcodesharing'
+  mysql_password : 'Mysqlsiva26%'
+  mysql_port : '3306'
+  mysql_database : 'test_python'

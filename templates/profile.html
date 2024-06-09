@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head >
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>My Profile</title>
+    <script type = "text/javascript">
+             var ans = '{{ ms }}'
+             {
+               window.alert (ans)
+            }
+    </script>
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto:400,700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="/static/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page" style="background:white;">
+  <div class="heroarea">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <div class="top_contact-container">
+          <div class="tel_container">
+            <a href="">
+              <img src="/static/images/telephone-symbol-button.png" alts=""> Call : +01 1234567890
+            </a>
+          </div>
+          <div class="social-container">
+            <a href="">
+              <img src="/static/images/fb.png" alt="" class="s-1">
+            </a>
+            <a href="">
+              <img src="/static/images/twitter.png" alt="" class="s-2">
+            </a>
+            <a href="">
+              <img src="/static/images/instagram.png" alt="" class="s-3">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <img src="/static/media/brand.svg" alt="">
+            <span>
+              MYPROJECT
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex  flex-column flex-lg-row align-items-center w-100 justify-content-between">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="liveone"> My Profile </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.onlinegdb.com/"> Online GDB </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="project.html"> Upload Project </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+              </ul>
+              <form class="form-inline ">
+                  <a href="searchform.html"><input type="search" placeholder="Search the Projects..."><button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button></a>
+              </form>
+              <div class="login_btn-contanier ml-0 ml-lg-5">
+                
+                  <span>
+                    <a href="logout" ><img src="/static/images/user.png" alt="">Logout</a>
+                  </span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+	<section class="pro" style="background:white;">
+		<!--<link rel="stylesheet" href="{{  url_for('static',filename='css/style.css')  }}">-->
+		<link rel="stylesheet" href="/static/css/css1/styles2.css">
+		<form action="{{ url_for('profile') }}" method="POST" enctype=multipart/form-data>
+			<div class="mypro">
+	    		<label for="login" ><h2>PROFILE</h2></label></br>
+			</div>
+<!--            <div class="msg">{{ msg }}</div>-->
+		<div class="profile">
+            <br><div class="photo">
+                <form  enctype="multipart/form-data">
+				    <br><br><p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+				    <p><label for="file" class="upload" style="cursor: pointer;"><b>Upload Image</b></label></p>
+				    <p><img id="output" name="image" width="200" style="float:center-right;"/></p>
+    				  <script>
+        					var loadFile = function(event) {
+	        				var image = document.getElementById('output');
+		        			image.src = URL.createObjectURL(event.target.files[0]);
+			        		};
+				      </script>
+                </form>
+            </div>
+			<div class="getsinput">
+				<label class="box" for="name"><b>USER NAME &nbsp</b></label> {{ usermast.name }}
+			<!--	<input type="text" name="name"  id="name" maxlength="25"  size="25"  	></br></br>-->
+			</div>
+			<div class="getsinput">
+      			<label class="box"  for="identity"><b>Mail ID &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </b></label> {{ usermast.emailid }}
+      			<!--<input type="email" name="emailid" id="identity"  maxlength="25"  size="25" ></br></br>-->
+			</div>
+			<div class="getsinput">
+      			<label class="box" for="number"><b>Job &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </b></label>
+      			<input type="text" name="job"  id="number"  maxlength="50" contenteditable="true"  size="25" </br></br>
+			</div>
+			<div class="getinput">
+				<br><label for="address"><b>Pin Points Remember :</b></label><br>
+				<textarea type="address" name="pointsremember" class="address" contenteditable="true" id="address" placeholder="Comments!...." cols="52" rows="12"></textarea>
+			</div>
+			<div class="update">
+				<br>
+				<button type="submit" value="submit" class="box" name="update" ><b>UPDATE</b></button><br><br><br>
+			</div>
+			<div class="getinput">
+
+              <a href="myproj.html"><input type="button"  class="myprojects" name="myprojects" VALUE="MY PROJECTS" ></a>
+
+<!--                <script type="text/javascript">-->
+<!--                    document.getElementById("mainbtn").addEventListener("click",redirectFunction);-->
+<!--                    function redirectFunction(){-->
+<!--                        window.location.replace("myproject.html");-->
+<!--                    };-->
+<!--		        </script>-->
+
+              <input type="button"  class="myprojects" name="myprojects" VALUE="Do ANSWER" >
+
+
+				<input type="button"  class="myprojects" name="myprojects" VALUE="MY QUESTIONS" >
+			</div>
+		</form>
+		</div>	
+
+
+	</section>
+  
+
+
+
+  <!-- info section -->
+  <section class="info_section layout_padding2" >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h4>
+              Contact
+            </h4>
+            <div class="box">
+              <div class="img-box">
+                <img src="/static/images/telephone-symbol-button.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  +01 123567894
+                </h6>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img-box">
+                <img src="/static/images/email.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  demo@gmail
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_menu">
+            <h4>
+              Menu
+            </h4>
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html"> My Profile </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="project.html"> Upload Project </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info_news">
+            <h4>
+              newsletter
+            </h4>
+            <form action="">
+              <input type="text" placeholder="Enter Your email">
+              <div class="d-flex justify-content-center justify-content-md-end mt-3">
+                <button class="getinput">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      <a href="https://html.design/">Copyrights &copy 2022 MyProject.All rights reserved. </a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="/static/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="/static/js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js">
+  </script>
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: [],
+      autoplay: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    $(".owl-2").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: [],
+      autoplay: true,
+
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

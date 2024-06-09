@@ -1,0 +1,128 @@
+body{
+    background: url("/media/img.jpg");
+}
+
+.signin{
+
+	border-width :25px;
+	background-color: rgba(0,0,0,0.2);
+	margin-top:170px ;
+	margin-left: 480px;
+	margin-right:480px ;
+	margin-bottom: 170px;
+	padding-bottom: 100px;
+	padding-top:30px;
+	
+}
+
+.getinput{
+	text-align: center;
+}
+
+.checkbox
+{
+	margin-left: 10px;
+	float:left;
+}
+
+label[for="checked"]
+{
+	float:left;
+	
+}
+
+label[for="login"]
+{
+	color: white;
+}
+
+.signin getinput{
+	width:100%;
+	font-size: 1em;
+	border:1px transparent #006D77;
+	box-shadow: 2px;
+	border-radius:20px ;
+	
+}
+
+input[type="text"]{
+	width:300px;
+	padding:10px;
+	background-color:transparent;
+	text-decoration-color: white;
+}
+
+
+input[type="password"]{
+	width:300px;
+	padding:10px;
+	list-style-image: url("https://codyhouse.co/demo/login-signup-modal-window/img/cd-icon-password.svg");
+	background-color:transparent;
+	text-color: white;
+}
+
+
+button{
+	width:100px;
+	height:35px;
+
+	background-color:sandybrown;
+	text-color: white;
+	font-size: 1em;
+	border:transparent;
+	box-shadow: 2px;
+	border-radius:20px ;
+	
+}
+
+::placeholder { 
+	color: white;
+	opacity: 1; 
+  }
+
+.psw{
+	float:right;
+	padding-right: 20px;
+	
+}
+
+a:link{
+	color:green;
+}
+
+a:visited{
+	color: blue;
+}
+
+a:hover{
+	color:orange;
+}
+
+a:active{
+	color: pink;
+}
+
+p{
+	color: white;
+	text-align: center;
+}
+
+.google{
+	border-width:30px;
+	background-color:white;
+	margin-left:25px;
+	padding:8px;
+	border-radius: 5px;
+}
+
+.fb{
+	margin-left:40px;
+}
+
+.twitter{
+	margin-left:40px;
+}
+
+.stack{
+	margin-left:40px;
+}

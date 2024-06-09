@@ -1,0 +1,26 @@
+
+<h3>{{ numrows }} Records Found</h3>
+<table class="table table-striped custab">
+  <thead>
+      <tr>
+            <th>Owner Name</th>
+            <th>Title</th>
+            <th>Language</th>
+            <th>Run Requirements</th>
+            <th>project File</th>
+
+      </tr>
+  </thead>
+  <tbody>
+{% for row in projmast %}
+   <tr>
+        <td>{{ row.name }}</td>
+        <td>{{ row.projtitle }}</td>
+        <td>{{ row.languages }}</td>
+        <td>{{ row.descriptions }}</td>
+        <td>{{ row.filename }}</td>
+        <td>
+            <a href="/static/{{ row.filename }}" download>Download</a>
+        </td>
+   </tr>
+{% endfor %}

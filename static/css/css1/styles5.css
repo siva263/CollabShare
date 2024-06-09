@@ -1,0 +1,121 @@
+.project{
+	font-size:1.2em;
+	border-width :25px;
+	background-color: rgba(173, 216, 230,0.4);
+	margin-top:20px ;
+	margin-left: 370px;
+	margin-right:370px ;
+	margin-bottom: 150px;
+	padding-bottom: 100px;
+	padding-top:30px;
+	padding-left:35px;
+	text:bold;
+	border:transparent;
+	box-shadow: 10px 20px 10px 20px lightblue;
+	border-radius:30px ;
+	text-color: blue;
+}
+
+.newproject{
+	font-size:1.2em;
+	padding-left:20px;
+	color: black;
+	border-top-width :5px;
+	border-bottom-width:5px;
+	border-left-width:5px;
+	border-right-width:5px;
+	background-color: rgba(0,0,0,0.2);
+	margin-left: 500px;
+	margin-right:500px ;
+	margin-top:50px;
+	padding-top:10px;
+	text:bold;
+	border:transparent;
+	border-radius:50px ;
+
+}
+
+.myproject{
+	text-align:center;
+
+}
+textarea{
+	padding:10px;
+	margin-left:10px;
+	text-decoration-color: black;
+}
+
+
+input[type="file"]{
+	padding-left:50px;
+}
+
+
+button{
+	width:120px;
+	height:50px;
+	text:bold;
+	background-color:aqua;
+	font-size: 1.1em;
+	font-family: Times, "Times New Roman", Georgia, serif;
+	border:transparent;
+	box-shadow: 2px;
+	color:brown;
+	align:center;
+}
+
+
+body{
+	background:white;
+}
+
+.header_section{
+	background:black;
+}
+
+
+.details{
+	font-size: 1.1em;
+	padding-top:20px;
+}
+
+.getinput{
+	padding-left:20px;
+}
+
+.photo{
+	text-align :center;
+}
+
+
+label[class="box"]{
+	display:inline;
+	padding-left:20px;
+
+	text-style:bold;
+	color:brown;
+}
+
+
+.upload{
+	border:2px;
+	padding-bottom:1px;
+	padding-top:1px;
+	padding-left:2px;
+	padding-right:1px;
+	border-style:solid;
+	border-color:black;
+}
+
+textarea{
+	padding-left:40px;
+	font-size:1.1em;
+}
+
+#mytable{
+	margin-left:100px;
+	margin-right:100px;
+	margin-bottom:50px;
+	padding-left:100px;
+	padding-right:100px;
+}

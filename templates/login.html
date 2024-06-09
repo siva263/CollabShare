@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+	<script type = "text/javascript">
+<!--             var ans = '{{ ms }}'-->
+             {
+               window.alert (ans)
+            }
+    </script>
+
+	<!--<link rel="stylesheet" href="{{  url_for('static',filename='css/style.css')  }}">-->
+	<link rel="stylesheet" href="/static/css/css1/styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+<body>
+	<div class="signin">
+    	<form action="{{ url_for('login') }}" method="POST" >
+			<div class="msg" "styles=background:orange;">
+				{{ ms }}
+			</div>
+	   		<div class="getinput">
+	    		<label for="login" ><h2>Login</h2></label></br>
+			</div>
+   			<div class="getinput">
+      			<label for="email"><i class="fas fa-user"></i></label>
+      			<input type="email"  name="emailid" id="email" placeholder="Email ID" maxlength="25"  size="20" required></br></br>
+	   		</div>
+	   		<div class="getinput">
+	   			<label for="password"><i class="fas fa-lock"></i></label>
+	   			<input type="password" name="passwords"  id="password" placeholder="Password" minlength="8"  size="20" required></br></br></br>
+			</div>
+	   		<div class="getinput">
+	    		<a href="profile.html" ><button type="Submit"><b>Login</b></button></a></br>
+			</div>
+			<div >
+				</br><input type="checkbox" class="checkbox"   name="remember" id="checked">
+				<label for="checked">Remember me </label>
+				<span class="psw"> <a href="#" class="connect" target="_blank">Forgot password?</a></span>
+			</div>
+			<div>
+				<br></br><p>Don't have an account?<a href ="signup.html" class="account" target="_blank">Sign Up</a></p>
+			</div>
+			<div>
+				</br><p>-Or Sign in With-</p>
+			</div>
+			<div>
+				<a 	href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmyaccount.google.com%2Fdeleteaccount&service=accountsettings&osid=1&rart=ANgoxcelM3R9_WVw0FyWOgo0iXn7-kLoburMyPf3epqdckchsNtJfgR1H4okgPdNfNGZKu7hNPwcEUgkExMcFk-bNTFgtchlsw&flowName=GlifWebSignIn&TL=AB_wV5oHRV9ui-UKM-sktCW012SNSxu4TjaBB9SZqaMEcXQPH3NkZyZwt2b-plzD&cid=1&flowEntry=ServiceLogin"  target="_blank"><img class="google" src="/static/media/google.png"></a>
+				<a href="https://m.facebook.com/login/?locale2=en_GB"  target="_blank"><img class="fb" src="/static/media/facebook.png"></a>
+				<a href="https://twitter.com/i/flow/login"  target="_blank"><img class="twitter" src="/static/media/twitter.png"></a>
+				<a href="https://stackoverflow.com/users/login"  target="_blank"><img class="stack" src="/static/media/stackOverflow.png"></a>
+			</div>
+		</form>
+   	</div>
+</body>
+</html>
+
+
+
+
+

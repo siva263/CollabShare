@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up Form</title>
+	<!--<link rel="stylesheet" href="{{  url_for('static',filename='css/styles1.css')  }}">-->
+	<link rel="stylesheet" href="/static/css/css1/styles1.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+<body>
+	<div class="signup">
+    	<form action="{{ url_for('signup') }}" method="POST" >
+	   		<div class="getinput">
+	    		<label for="login" ><h2>Sign Up</h2></label></br>
+			</div>
+   			<div class="getinput">
+      			<label for="name"><i class="fas fa-user"></i></label>
+      			<input type="text" name="name" id="name" placeholder="Name" maxlength="25"  size="20" required></br></br>
+	   		</div>
+            <div class="getinput">
+                <label for="name"><i class="fas fa-user"></i></label>
+                <input type="text" name="lastname" id="name" placeholder="Last Name" maxlength="25"  size="20" ></br></br>
+            </div>
+            <div class="getinput">
+                <label for="name"><i class="fas fa-envelope"></i></label>
+                <input type="email" name="emailid" id="name" placeholder="Email ID" maxlength="25"  size="20" required></br></br>
+             </div>
+	   		<div class="getinput">
+	   			<label for="password"><i class="fas fa-lock"></i></label>
+	   			<input type="password" name="passwords" id="password" placeholder="Password" minlength="8"  size="20" required></br></br>
+			</div>
+			<div class="getinput">
+	   			<label for="confpassword"><i class="fas fa-lock"></i></label>
+	   			<input type="password" name="confirmpassword" id="confpassword" placeholder="confirm Password" minlength="8"  size="20" required></br></br></br>
+			</div>
+	   		<div class="getinput">
+	    		<button type="Submit"><b>Sign Up</b></button></br>
+			</div>
+			<div>
+				</br><p>Already have an account?<a href ="login.html" class="account" target="_blank">Log In</a></p>
+			</div>
+
+
+		</form>
+   	</div>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+.pro{
+	padd
+}
+body{
+	background:white;
+}
+
+.header_section{
+	background:black;
+}
+
+.profile{
+	background:white;
+	border-width :25px;
+	background-color: rgba(173, 216, 230,0.4);
+	margin-top:20px ;
+	margin-left: 400px;
+	margin-right:400px ;
+	margin-bottom: 200px;
+	padding-bottom: 150px;
+	padding-top:30px;
+	text:bold;
+	border:transparent;
+	box-shadow: 10px 20px 10px 20px lightblue;
+	border-radius:30px ;
+	text-color: blue;
+	
+}
+
+.mypro{
+	background:white;
+	text-align : center;
+	color: black;
+	border-top-width :5px;
+	border-bottom-width:5px;
+	border-left-width:5px;
+	border-right-width:5px;
+	background-color: rgba(0,0,0,0.2);
+	margin-left: 500px;
+	margin-right:500px ;
+	margin-top:50px;
+	padding-top:10px;	
+	text:bold;
+	border:transparent;
+	border-radius:50px ;
+
+	
+}
+
+.getinput{
+	text-align: center;
+}
+
+.update{
+	text-align: center;
+}
+
+.photo{
+	text-align :center;
+}
+
+
+label[class="box"]{
+	width: 120px;
+	display:inline;
+	padding-left:80px;
+    
+	text-style:bold;
+	color:brown;
+}
+
+
+.upload{
+	border:2px;
+	padding-bottom:1px;
+	padding-top:1px;
+	padding-left:2px;
+	padding-right:1px;
+	border-style:solid;
+	border-color:black;
+}
+
+button{
+	width:120px;
+	height:50px;
+	text:bold;
+	font-family: Times, "Times New Roman", Georgia, serif;
+	background-color:aqua;
+	font-size: 1em;
+	border:transparent;
+	box-shadow: 2px;
+	color:brown;
+}
+[type="button"]{
+    width:120px;
+	height:50px;
+	text:bold;
+	font-family: Times, "Times New Roman", Georgia, serif;
+	background-color:aqua;
+	font-size: 1em;
+	border:transparent;
+	box-shadow: 2px;
+	color:brown;
+	text-align:center;
+	text-padding : 15px;
+}
+
+textarea{
+	font-size:1.1em;
+}
+
+.myprojects{
+
+}
